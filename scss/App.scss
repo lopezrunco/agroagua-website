@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&family=Nunito:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+@import 'Variables';
+@import 'reset';
+
+@import 'about';
+@import 'bottom';
+@import 'clients';
+@import 'contact-form';
+@import 'contact-info';
+@import 'curvy-border-bottom';
+@import 'curvy-border-top';
+@import 'footer';
+@import 'hero-section';
+@import 'lasts-works-home';
+@import 'lasts-works';
+@import 'latest-work-item';
+@import 'map';
+@import 'nav';
+@import 'services-grid';
+@import 'services';
+@import 'whatsapp-link';
+
+
+// Global styles
+::selection {
+  background-color: $selection;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: $light-bg;
+  color: $dark-text;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 3.8rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+// Flex
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-row {
+  display: flex;
+  flex-direction: row;
+}
+
+// Text
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span.category,
+span.author {
+  font-family: 'Dosis', sans-serif;
+  color: $dark-text;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  margin-bottom: 0.85rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1rem;
+  color: $dark-text;
+  margin: 0.625rem 0;
+}
+
+.featured-text {
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.5;
+
+  .featured-text-mark {
+    color: $light-primary-color;
+    font-weight: 900;
+  }
+}
+
+small {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  line-height: 1.025rem;
+  color: $white-text;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  transition: $main-transition;
+
+  &:hover {
+    color: $dark-primary-color;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  small,
+  span.category,
+  span.author {
+    text-align: center;
+  }
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  h2.title {
+    text-transform: uppercase;
+  }
+
+  h3.subtitle {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: $primary-color;
+  }
+
+  .separator {
+    width: 100px;
+    height: 8px;
+    margin: 1rem 0;
+    background-image: url('./assets/wave.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-title {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+// Buttons
+.button {
+  display: inline-block;
+  margin: 1rem 0;
+  border-radius: $border-radius;
+  padding: 0.7em 1.764em;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.37rem;
+  letter-spacing: 1px;
+  transition: $main-transition;
+  width: auto;
+}
+
+.button-lg {
+  font-size: 1.25rem;
+}
+
+.button-md {
+  font-size: 1.2rem;
+}
+
+.button-sm {
+  font-size: 1rem;
+}
+
+.primary-button {
+  background-color: $primary-color;
+  color: $white-text;
+
+  &:hover {
+    background-color: $dark-primary-color;
+    color: $white-text;
+    box-shadow: 0 5px 5px 0 rgb(41 112 250 / 25%);
+  }
+}
+
+.primary-button-outline {
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $white-text;
+  }
+}
+
+.secondary-button {
+  background-color: $white-bg;
+  color: $dark-text;
+  font-weight: 400;
+
+  &:hover {
+    color: $primary-color;
+    box-shadow: 0 5px 5px 0 rgb(41 112 250 / 25%);
+  }
+}
+
+// Spacing
+section {
+  padding: 5rem 0;
+}

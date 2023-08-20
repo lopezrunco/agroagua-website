@@ -1,0 +1,23 @@
+@import './Variables';
+
+.wapp-link-home {
+    background-color: $medium-dark-bg;
+    padding: 3rem 0;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 1rem;
+
+        span {
+            display: block;
+            font-weight: 700;
+            color: $primary-color;
+        }
+    }
+
+    p {
+        text-align: center;
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+}

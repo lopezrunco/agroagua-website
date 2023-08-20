@@ -1,0 +1,33 @@
+@import './Variables';
+
+.services-home-grid {
+    .content-wrapper {
+        .item-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 3rem;
+            margin-bottom: 1.5rem;
+            border-radius: $border-radius-cards;
+            box-shadow: $box-shadow;
+            background-color: $white-bg;
+
+            .icon {
+                font-size: 4rem;
+                color: $dark-primary-color;
+            }
+
+            h5 {
+                margin-bottom: 0;
+                color: $light-primary-color;
+            }
+
+            p {
+                color: $light-text;
+                text-align: center;
+            }
+        }
+    }
+}

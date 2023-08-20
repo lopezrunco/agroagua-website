@@ -1,0 +1,26 @@
+[
+    {
+        "iconclass": "fas fa-map-marker-alt",
+        "text": "Ruta 5 km 98.500 Florida, Uruguay",
+        "link": "https://goo.gl/maps/oZxFMqGjxWR8DG3Q9",
+        "id": "0"
+    },
+    {
+        "iconclass": "fas fa-phone-alt",
+        "text": "(+598) 99 352 914",
+        "link": "tel:+59899352914",
+        "id": "1"
+    },
+    {
+        "iconclass": "fa fa-envelope",
+        "text": "info@agroagua.com.uy",
+        "link": "mailto:info@agroagua.com.uy",
+        "id": "2"
+    },
+    {
+        "iconclass": "fab fa-facebook",
+        "text": "/Agroagua",
+        "link": "https://www.facebook.com/Agroagua/",
+        "id": "3"
+    }
+]

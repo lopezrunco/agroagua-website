@@ -1,0 +1,95 @@
+@import './Variables';
+
+.hero-section {
+    height: calc(100vh - 70px);
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../assets/home-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .overcolor {
+        height: 100%;
+        background-color: #c1e5fcb8;
+
+        .container.f-column {
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+
+            .content-wrapper {
+                align-items: center;
+                gap: 1rem;
+
+                h1 {
+                    span {
+                        color: $light-primary-color;
+                    }
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                    font-weight: 500;
+                    max-width: 30rem;
+                }
+
+                .button-group {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.hero-curvy-border {
+    position: absolute;
+    bottom: -28px;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-section {
+        height: calc(130vh - 70px);
+
+        .overcolor {
+            .container.f-column {
+                height: 70%;
+
+                .content-wrapper {
+                    h1 {
+                        font-size: 4.3rem;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        line-height: 1;
+
+                        span {
+                            display: block;
+                        }
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+
+                    .button-group {
+                        flex-direction: row;
+                        gap: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-curvy-border {
+        bottom: -275px;
+    }
+}

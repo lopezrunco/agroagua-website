@@ -1,0 +1,37 @@
+@import './Variables';
+
+.about-home {
+    .content-wrapper {
+        gap: 2rem;
+
+        .item-wrapper {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                border-radius: $border-radius-cards;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-home {
+        .content-wrapper {
+            gap: 0;
+
+            .item-wrapper {
+                align-items: flex-start;
+
+                .section-title {
+                    h3.subtitle {
+                        align-self: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 <?php
 include 'components/header.php';
 include 'pages/home.php';
+include 'components/bottom.php';
 include 'components/footer.php';
 ?>
 

@@ -2,10 +2,12 @@
 $hero_data = file_get_contents('config/hero.json');
 $services_data = file_get_contents('config/services.json');
 $about_data = file_get_contents('config/about.json');
+$wapp_data = file_get_contents('config/whatsapp.json');
 
 $json_hero_data = json_decode($hero_data, true);
 $json_services_data = json_decode($services_data, true);
 $json_about_data = json_decode($about_data, true);
+$json_wapp_data = json_decode($wapp_data, true);
 ?>
 
 <!-- Hero section / Slider -->
@@ -84,3 +86,39 @@ $json_about_data = json_decode($about_data, true);
         </div>
     </div>
 </section>
+
+<!-- Whatsapp link -->
+<svg class="curvy-border-top" viewBox="0 0 1440 125">
+    <g>
+        <path
+            d="M1256 11.76C1237.2 17.26 1209.4 27.56 1170 25.76C1127.2 23.86 1125.3 10.16 1087 7.75998C1026.9 3.95998 1015 36.56 959 29.76C920.1 25.06 921.3 8.85998 884 7.75998C841.3 6.55998 834.4 27.66 790 27.76C749.8 27.86 748.5 10.66 707 9.75998C662.5 8.75998 658.2 28.46 611 31.76C563.1 35.06 560 15.26 504 13.76C452.5 12.36 450 28.96 396 29.76C336.7 30.56 332.6 9.35998 279.1 10.76C216.3 12.36 202.3 40.36 146 43.76C112.8 45.76 63 41.96 0 10.76V124.6H1440V10.76C1353.8 -7.34002 1294.8 0.459979 1256 11.76Z"
+            fill='#f6fafe'></path>
+    </g>
+</svg>
+
+<section class='wapp-link-home'>
+    <div class='container'>
+        <div class='row content-wrapper'>
+            <div class='col-12 item-wrapper'>
+                <h1>
+                    <?php echo '<span>' . $json_wapp_data['title'] . '</span>' . $json_wapp_data['number'] . '' ?>
+                </h1>
+                <p>
+                    <?php echo $json_wapp_data['text'] ?>
+                </p>
+                <a class='button button-lg primary-button' href=<?php echo $json_wapp_data['link'] ?> target='_blank'
+                    rel="noreferrer">
+                    <?php echo $json_wapp_data['button'] ?>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<svg className="curvy-border-bottom" viewBox="0 0 1440 125">
+    <g>
+        <path
+            d="M1256 11.76C1237.2 17.26 1209.4 27.56 1170 25.76C1127.2 23.86 1125.3 10.16 1087 7.75998C1026.9 3.95998 1015 36.56 959 29.76C920.1 25.06 921.3 8.85998 884 7.75998C841.3 6.55998 834.4 27.66 790 27.76C749.8 27.86 748.5 10.66 707 9.75998C662.5 8.75998 658.2 28.46 611 31.76C563.1 35.06 560 15.26 504 13.76C452.5 12.36 450 28.96 396 29.76C336.7 30.56 332.6 9.35998 279.1 10.76C216.3 12.36 202.3 40.36 146 43.76C112.8 45.76 63 41.96 0 10.76V124.6H1440V10.76C1353.8 -7.34002 1294.8 0.459979 1256 11.76Z"
+            fill='#f6fafe'></path>
+    </g>
+</svg>

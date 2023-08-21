@@ -1,21 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&family=Nunito:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
 @import 'Variables';
 @import 'reset';
-
-@import 'about';
-@import 'clients';
-@import 'contact-form';
-@import 'contact-info';
-@import 'curvy-border-bottom';
-@import 'curvy-border-top';
-@import 'hero-section';
-@import 'lasts-works-home';
-@import 'lasts-works';
-@import 'latest-work-item';
-@import 'map';
-@import 'services-grid';
+@import 'home';
 @import 'services';
-@import 'whatsapp-link';
+@import 'works';
+@import 'contact';
 
 
 // Global styles
@@ -264,6 +253,15 @@ a {
 // Spacing
 section {
   padding: 5rem 0;
+}
+
+.curvy-border-bottom {
+  transform: scaleY(-1);
+  margin-top: -2.5rem;
+}
+
+.curvy-border-top {
+  margin-bottom: -2.5rem;
 }
 
 // Nav

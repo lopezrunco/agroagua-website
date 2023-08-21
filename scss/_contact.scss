@@ -50,3 +50,35 @@
         }
     }
 }
+
+.map {
+    padding: 3rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border-radius: $border-radius-cards;
+    box-shadow: $box-shadow;
+    background-color: $white-bg;
+
+    iframe {
+        border-radius: $border-radius-cards;
+    }
+}
+
+.contact-form {
+    width: 100%;
+    margin: 2rem 0 0;
+    padding: 2rem 0 0;
+
+    .group {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        input,
+        textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+}

@@ -26,9 +26,9 @@
                 <div class='navigation-menu'>
                     <ul>
                         <li><a href='/index.php'>Inicio</a></li>
-                        <li><a href="/servicios">Servicios</a></li>
-                        <li><a href="/trabajos">Trabajos</a></li>
-                        <li><a href="/contacto">Contacto</a></li>
+                        <li><a href="/agroagua-web-php/servicios.php">Servicios</a></li>
+                        <li><a href="/agroagua-web-php/pages/trabajos.php">Trabajos</a></li>
+                        <li><a href="/agroagua-web-php/pages/contacto.php">Contacto</a></li>
                     </ul>
                 </div>
             </nav>

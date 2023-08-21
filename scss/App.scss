@@ -259,6 +259,21 @@ section {
   margin-bottom: -2.5rem;
 }
 
+// Header
+.desktop-header {
+  display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-header {
+    display: none !important;
+  }
+
+  .desktop-header {
+    display: block !important;
+  }
+}
+
 // Nav
 .navigation {
   height: 70px;

@@ -1,5 +1,10 @@
+<?php
+$contact_data = file_get_contents('config/contact.json');
+$json_contact_data = json_decode($contact_data, true);
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -16,6 +21,20 @@
 </head>
 
 <body>
+    <!-- Top -->
+    <div class="top d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <?php echo $json_contact_data[0]['text'] ?>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <?php echo $json_contact_data[2]['text'] ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Desktop header -->
     <header class='desktop-header'>
         <div class='container border-bottom'>

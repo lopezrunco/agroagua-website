@@ -15,17 +15,17 @@ $json_work_data = json_decode($work_data, true);
         </div>
         <div class='row content-wrapper'>
             <?php
-            foreach ($json_work_data as $work_item) {
-                if ($work_item['id'] < 6) {
-                    echo '<div class="col-lg-4 last-work-item-wrapper">
+                foreach ($json_work_data as $work_item) {
+                    if ($work_item['id'] < 6) {
+                        echo '<div class="col-lg-4 last-work-item-wrapper">
+                                <img src="' . $work_item['imgUrl'] . '" alt="Agroagua trabajos" />
+                            </div>';
+                    } else {
+                        echo '<div class="col-12 last-work-item-wrapper">
                             <img src="' . $work_item['imgUrl'] . '" alt="Agroagua trabajos" />
                         </div>';
-                } else {
-                    echo '<div class="col-12 last-work-item-wrapper">
-                        <img src="' . $work_item['imgUrl'] . '" alt="Agroagua trabajos" />
-                    </div>';
+                    }
                 }
-            }
             ?>
         </div>
     </div>

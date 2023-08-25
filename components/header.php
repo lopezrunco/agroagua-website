@@ -39,15 +39,15 @@ $json_contact_data = json_decode($contact_data, true);
     <header class='desktop-header'>
         <div class='container border-bottom'>
             <nav class='navigation'>
-                <a href='/agroagua-web-php/index.php' class='brand-name'>
+                <a href='/index.php' class='brand-name'>
                     <img src='./assets/logo.png' alt='Agro agua' />
                 </a>
                 <div class='navigation-menu'>
                     <ul>
-                        <li><a href='/agroagua-web-php/index.php'>Inicio</a></li>
-                        <li><a href="/agroagua-web-php/servicios.php">Servicios</a></li>
-                        <li><a href="/agroagua-web-php/trabajos.php">Trabajos</a></li>
-                        <li><a href="/agroagua-web-php/contacto.php">Contacto</a></li>
+                        <li><a href='/index.php'>Inicio</a></li>
+                        <li><a href="/servicios.php">Servicios</a></li>
+                        <li><a href="/trabajos.php">Trabajos</a></li>
+                        <li><a href="/contacto.php">Contacto</a></li>
                     </ul>
                 </div>
             </nav>
@@ -58,7 +58,7 @@ $json_contact_data = json_decode($contact_data, true);
     <header class="mobile-header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <a href='/agroagua-web-php/index.php' class='brand-name d-flex'>
+                <a href='/index.php' class='brand-name d-flex'>
                     <img src='./assets/logo.png' alt='Agro agua' />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -68,16 +68,16 @@ $json_contact_data = json_decode($contact_data, true);
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/agroagua-web-php/index.php">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="/index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/agroagua-web-php/servicios.php">Servicios</a>
+                            <a class="nav-link" href="/servicios.php">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/agroagua-web-php/trabajos.php">Trabajos</a>
+                            <a class="nav-link" href="/trabajos.php">Trabajos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/agroagua-web-php/contacto.php">Contacto</a>
+                            <a class="nav-link" href="/contacto.php">Contacto</a>
                         </li>
                     </ul>
                 </div>
